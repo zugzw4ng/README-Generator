@@ -51,7 +51,7 @@ const questions = [{
 },
 {
     type: 'list',
-    message: "Choose a license for your project.",
+    message: "Choose a license for your project",
     choices: ['GNU AGPLv3', 'GNU GPLv3', 'GNU LGPLv3', 'Mozilla Public License 2.0', 'Apache License 2.0', 'MIT License', 'Boost Software License 1.0', 'The Unlicense'],
     name: 'license'
 }];
@@ -68,8 +68,20 @@ function writeToFile(fileName, data) {
     });
 }
 
-// TODO: Create a function to initialize app
-function init() { }
+async function init() {
+    try {
+        const userInput = await inquirer.prompt(questions);
+        const markdown = generateMarkdown(userInput);
+        console.log("Your response: ", userInput);
+    
+        console.log("Generating your README next...")
+        console.log(markdown);
+    
+        await writeFileAsync('ExampleREADME.md', markdown);
 
+    } catch (error) {
+        console.log(error);
+    }
+};
 // Function call to initialize app
 init();
