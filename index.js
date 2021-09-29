@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require('util')
 
 const questions = [{
     type: 'input',
@@ -68,17 +69,16 @@ function writeToFile(fileName, data) {
     });
 }
 
+const writeInitFile = util.promisify(writeToFile);
+
 async function init() {
     try {
         const userInput = await inquirer.prompt(questions);
         const markdown = generateMarkdown(userInput);
         console.log("Your response: ", userInput);
-    
         console.log("Generating your README next...")
         console.log(markdown);
-    
-        await writeFileAsync('ExampleREADME.md', markdown);
-
+        await writeInitFile('ExampleREADME.md', markdown);
     } catch (error) {
         console.log(error);
     }

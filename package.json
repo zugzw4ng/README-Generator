@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/zugzw4ng/README-Generator#readme",
   "dependencies": {
-    "inquirer": "^8.1.5"
+    "inquirer": "^8.1.5",
+    "util": "^0.12.4"
   }
 }
