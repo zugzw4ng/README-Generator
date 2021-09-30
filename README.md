@@ -7,7 +7,6 @@ I created a `README.md` file generator that operates within the command line. Po
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributions](#contributions)
   * [Tests](#tests)
   * [License](#license)
   
@@ -24,3 +23,6 @@ The program can be invoked with `node index.js` and you will be prompted with a 
   An example `README.md` file included in this program
   https://github.com/zugzw4ng/README-Generator/blob/fffcd142119e2730c0a0561595f726bac145a17c/ExampleREADME.md
   
+  ## License
+  
+  MIT License
