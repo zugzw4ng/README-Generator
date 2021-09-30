@@ -1,17 +1,82 @@
-function generateMarkdown(userResponses) {
+function generateMarkdown(userInput) {
   let draftTable = `## Table of Contents`;
 
-  if (userResponses.installation !== '') { draftTable += `
+  if (userInput.installation !== '') {
+    draftTable += `
   * [Installation](#installation)` };
 
-  if (userResponses.usage !== '') { draftTable += `
+  if (userInput.usage !== '') {
+    draftTable += `
   * [Usage](#usage)` };
 
-  if (userResponses.contributing !== '') { draftTable += `
+  if (userInput.contributions !== '') {
+    draftTable += `
   * [Contributions](#contributions)` };
 
-  if (userResponses.tests !== '') { draftTable += `
+  if (userInput.tests !== '') {
+    draftTable += `
   * [Tests](#tests)` };
 
+  let draftMarkdown =
+    `# ${userInput.title}
+  
+  ## Description 
+
+  ${userInput.description}
+  `
+  draftMarkdown += draftTable;
+
+  draftMarkdown += `
+  * [License](#license)`;
+
+  if (userInput.installation !== '') {
+
+    draftMarkdown +=
+      `
+  
+  ## Installation
+  
+  ${userInput.installation}`
+  };
+
+  if (userInput.usage !== '') {
+
+    draftMarkdown +=
+
+      `
+  
+  ## Usage 
+  
+  ${userInput.usage}`
+  };
+
+  if (userInput.contributions !== '') {
+    `
+  
+  ## Contributions
+  
+  ${userInput.contributions}`
+  };
+
+  if (userInput.tests !== '') {
+    draftMarkdown +=
+      `
+
+  ## Tests
+  
+  ${userInput.tests}`
+  };
+
+  draftMarkdown +=
+    `
+
+  ## License
+  
+  ${userInput.license}
+  `;
+
+  // Return markdown
+  return draftMarkdown;
 }
+
 module.exports = generateMarkdown;

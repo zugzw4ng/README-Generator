@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util')
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = [{
     type: 'input',
@@ -57,12 +58,10 @@ const questions = [{
     name: 'license'
 }];
 
-
-// TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) {
-            return console.log(err);
+    fs.writeFile(fileName, data, error => {
+        if (error) {
+            return console.log(error);
         }
 
         console.log("Your README.md file has been created")
@@ -83,5 +82,5 @@ async function init() {
         console.log(error);
     }
 };
-// Function call to initialize app
+
 init();
