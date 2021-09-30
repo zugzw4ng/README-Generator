@@ -1,8 +1,8 @@
-# README Generator
+# Test Title
   
   ## Description 
 
-  A quick and efficient README.md file generator for developers that operates within the command line
+  Test Description
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,15 +12,15 @@
   
   ## Installation
   
-  Test
+  Test Instructions
   
   ## Usage 
   
-  Test
+  Test Usage
 
   ## Tests
   
-  Test
+  Test tests
 
   ## License
   
