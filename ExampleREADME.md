@@ -2,7 +2,7 @@
   
   ## Description 
 
-  TEST test
+  A quick and efficient README.md file generator for developers that operates within the command line
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -12,17 +12,17 @@
   
   ## Installation
   
-  Test test
+  Test
   
   ## Usage 
   
-  Test test
+  Test
 
   ## Tests
   
-  Test Test
+  Test
 
   ## License
   
-  MIT License
+  The Unlicense
   
