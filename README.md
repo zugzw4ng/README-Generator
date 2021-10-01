@@ -1,5 +1,5 @@
 # README Generator
-![Badge for license](https://img.shields.io/github/license/zugzw4ng/readme-generator)
+![Badge for license](https://img.shields.io/github/license/zugzw4ng/README-Generator)
 
   ## Description 
 
