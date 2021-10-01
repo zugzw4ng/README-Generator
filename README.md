@@ -1,8 +1,10 @@
 # README Generator
-  
+![Badge for license](https://img.shields.io/github/license/zugzw4ng/readme-generator)
+
   ## Description 
 
 I created a `README.md` file generator that operates within the command line. Powered by Node.js and the Inquirer package, this application is simple to install and will run with a simple command.
+
 
   ## Table of Contents
   * [Installation](#installation)
