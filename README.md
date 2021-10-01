@@ -22,8 +22,8 @@ The program can be invoked with `node index.js` and you will be prompted with a 
 
   ## Tests
   
-  An example `README.md` file included in this program
-  https://github.com/zugzw4ng/README-Generator/blob/fffcd142119e2730c0a0561595f726bac145a17c/ExampleREADME.md
+  Here is a link to an example README.md created by the program:
+  https://drive.google.com/file/d/1NqWmxvuX6um-tZohykKkbcDJCMm-UWxd/view?usp=sharing
   
   ## License
   
