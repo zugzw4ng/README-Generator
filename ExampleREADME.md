@@ -1,28 +1,27 @@
 # README Generator
   
-  ![Badge for license](https://img.shields.io/github/license/zugzw4ng/readme-generator)
+  ![Badge for license](https://img.shields.io/github/license/zugzw4ng/README-Generator)
 
   ## Description 
 
-  Test Description
+  A simple and efficient README.md generator that operates within the command line.
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contributions](#contributions)
   * [Tests](#tests)
   * [License](#license)
   
   ## Installation
   
-  Test Installation
+  npm init to create a package.json for your file, thennpm i inquirer to install dependency package. finally, node index.js will run the program.
   
   ## Usage 
   
-  Test Usage
+  node index.js after above steps
 
   ## Tests
   
-  Test Tests
+  this
 
   ## License
   
