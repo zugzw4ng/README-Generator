@@ -1,5 +1,7 @@
-# Test Title
+# README Generator
   
+  ![Badge for license](https://img.shields.io/github/license/zugzw4ng/readme-generator)
+
   ## Description 
 
   Test Description
@@ -12,7 +14,7 @@
   
   ## Installation
   
-  Test Instructions
+  Test Installation
   
   ## Usage 
   
@@ -20,9 +22,9 @@
 
   ## Tests
   
-  Test tests
+  Test Tests
 
   ## License
   
-  The Unlicense
+  MIT License
   

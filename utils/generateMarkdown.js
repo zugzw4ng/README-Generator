@@ -20,11 +20,14 @@ function generateMarkdown(userInput) {
   let draftMarkdown =
     `# ${userInput.title}
   
+  ![Badge for license](https://img.shields.io/github/license/${userInput.username}/${userInput.repo})
+
   ## Description 
 
   ${userInput.description}
   `
   draftMarkdown += draftTable;
+
 
   draftMarkdown += `
   * [License](#license)`;
@@ -75,7 +78,6 @@ function generateMarkdown(userInput) {
   ${userInput.license}
   `;
 
-  // Return markdown
   return draftMarkdown;
 }
 
